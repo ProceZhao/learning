@@ -1,0 +1,63 @@
+git的使用
+
+【修改文件】
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$ls
+config     frame      libs       liuty_test phpapps
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$vim liuty_test
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$ls
+config     frame      libs       liuty_test phpapps
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git add liuty_test
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git commit -m "test"
+[master 5379f52] test
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 262 bytes | 262.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Project 'ganjifangchan/gongyupms' was moved to 'ganjifangchan/gongyu_pms'.
+remote:
+remote: Please update your Git remote:
+remote:
+remote:   git remote set-url origin http://igit.58corp.com/ganjifangchan/gongyu_pms.git
+To http://igit.58corp.com/ganjifangchan/gongyupms.git
+   9d5f402..5379f52  master -> master
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$ls
+config     frame      libs       liuty_test phpapps
+
+【新增文件】
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$ls
+config     frame      libs       liuty_test phpapps
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git pull
+Already up to date.
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$vim proce_test
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git add proce_test
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git commit -m "add a new test file"
+[master 29bb85f] add a new test file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 proce_test
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Project 'ganjifangchan/gongyupms' was moved to 'ganjifangchan/gongyu_pms'.
+remote:
+remote: Please update your Git remote:
+remote:
+remote:   git remote set-url origin http://igit.58corp.com/ganjifangchan/gongyu_pms.git
+To http://igit.58corp.com/ganjifangchan/gongyupms.git
+   5379f52..29bb85f  master -> master
+zhaoyujin@zhaoyujindeMacBook-Air:~/Desktop/gongyupms$ls
+config     frame      libs       liuty_test phpapps    proce_test
+
+【总结】
+git pull
+git add filename
+git commit -m 'message'
+git push
+
